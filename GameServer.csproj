@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Script\" />
+    <None Remove="Script\net\" />
+    <None Remove="Script\proto\" />
+    <None Remove="System.Web.Extensions" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Script\logic\" />
+    <None Remove="Script\db\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Script\" />
+    <Folder Include="Script\net\" />
+    <Folder Include="Script\proto\" />
+    <Folder Include="Script\logic\" />
+    <Folder Include="Script\db\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.32" />
+  </ItemGroup>
+</Project>
